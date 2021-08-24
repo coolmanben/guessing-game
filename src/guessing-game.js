@@ -11,17 +11,18 @@ class GuessingGame {
     }
 
     guess() {
-        let middle =  Math.ceil( ( this.left + this.right ) / 2 );
-        this.middle  = middle;
-        return middle;
+        let middle =  Math.ceil( ( this.left + this.rigth ) / 2 );
+        this.middle = middle;
+        return middle ;
     }
 
     lower() {
-        this.rigth = this.middle;
+        this.rigth  = this.middle;
+        
     }
 
     greater() {
-        this.left =  this.middle;
+        this.left = this.middle;
     }
 }
 
